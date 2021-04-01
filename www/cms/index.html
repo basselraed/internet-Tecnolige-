@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Code That</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Code That</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+     
+    </ul>
+
+    
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<section id ="logo">
+  <img src="images/logo.gpg.webp" width="150px" />
+</section>
+<section class="container-fluid"><
+<div class="container">
+  <table id="cart" class="table table-hover table-condensed">
+            <thead>
+            <tr>
+              <th style="width:100%">Product</th>
+              <th style="width:10%">Price</th>
+              <th style="width:8%">Quantity</th>
+              <th style="width:22%" class="text-center">Subtotal</th>
+              <th style="width:10%"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-th="Product">
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
+                  <div class="col-sm-10">
+                    <h4 class="nomargin">Product 1</h4>
+                    <p>Details</p>
+                  </div>
+                </div>
+              </td>
+              <td data-th="Price">$1.99</td>
+              <td data-th="Quantity">
+                <input type="number" class="form-control text-center" value="1">
+              </td>
+              <td data-th="Subtotal" class="text-center">1.99</td>
+              <td class="actions" data-th="">
+                
+                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i><a href="#" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span>Del</a></button>                
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="visible-xs">
+              <td class="text-center"><strong>Total 1.99</strong></td>
+            </tr>
+            <tr>
+              <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+              <td colspan="2" class="hidden-xs"></td>
+              <td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
+              <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+            </tr>
+          </tfoot>
+        </table>
+</div>
+<div class="container">
+  <div class="row">
+    <h2 class="text-danger"> Bestellung Information</h2>
+    
+    
+    <table class="table table-bordered success">
+        <thead>
+          <tr >
+            <th >Full Name</th>
+            <td>Mohammed</td>
+          </tr>
+          <tr>
+            <th class="info">Address</th>
+            <td>Deutschland</td>
+          </tr>
+          <tr>
+            <th class="info">Email</th>
+            <td>lm@mail.com</td>
+          </tr>
+          <tr>
+            <th class="info">Contact</th>
+            <td>+490000</td>
+          </tr>
+          
+          <tr>
+            <th class="info">State</th>
+            <td>Nieder</td>
+          </tr>
+          <tr>
+            <th class="info">City</th>
+            <td>Emden</td>
+          </tr>
+          <tr >
+            <th  class="info">Einkauf</th>
+            <td>????</td>
+          </tr>
+          <tr>
+            <th class="info">Brand</th>
+            <td>Golf</td>
+          </tr>
+          <tr>
+            <th class="info">Info</th>
+            <td> Limosine</td>
+          </tr>
+
+          <tr>
+            <th class="info">Liferung Status</th>
+            <td><b>bestellt</b></td>
+          </tr>
+        
+          <tr>
+            <th class="info bg-info">Lieferung Date</th>
+            <td class="bg-primary">14/12/2020</td>
+          </tr>
+          <tr>
+            <th class="info bg-primary">Bestellung Date</th>
+            <td class="bg-info">10/12/2020 12:00:45</td>
+          </tr>
+          <tr>
+              
+            <form >
+              
+            <th class="info">Actio zu Bezahlen</th>
+            <td><select id="approv_status" name="approv_status" class="form-control">
+              <option value="">Select</option>
+              <option value="active"><b>Rechnung</b></option>
+              <option value="inactive"><b></b>Paybal</option>
+            </select></td>
+            
+          </tr>
+          <tr >
+            <th colspan="1"></th>
+            <td>
+              <input type="hidden" name="hidden_id" id="hidden_id" value="<?php echo $value->id; ?>">
+              <input type="hidden" name="folder_name" id="folder_name"  value="<?php echo $value->email; ?>" >
+              <a href="<?php echo base_url()?>module_c/approval_manager/service_provider_display" class="btn btn-warning">zurück</a>
+              <input type="button" id="approve_btn" class="btn btn-info" name="approve_btn" value="Approve"></td>
+            </form>
+          </tr>
+        </thead>
+
+      </table>
+  </div>
+</div>
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Danke für Ihre Bestellung</h4>
+      </div>
+      <div class="modal-body">
+        <p>möchten Sie noch weiter bestellen?</p>
+        <div class="row">
+            <div class="col-12-xs text-center">
+                <button class="btn btn-success btn-md">Yes</button>
+                <button class="btn btn-danger btn-md">No</button>
+            </div>
+        </div>
+      </div>
+   
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+
+</section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html> 
